@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    text-align: center;
+  }
+  
+  /* Container for flexboxes */
+  section {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+ 
+  /* Style the footer */
+  footer {
+    background-color: #030202;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+
+header div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.top-logo img {
+    width: 150px;
+    margin: 10px 50px;
+}
+.top-menu a{
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 900;
+}
+.top-login{
+    display: flex;
+    justify-content: flex-end;
+}
+.top-login a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: white;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+.dropbtn .fa{
+  font-size: 40px;
+  display: inline-flex;
+}
+.dropbtn .fa:focus
+{
+  background-color: #030202;
+  margin-right: 150px;
+}
+.dropbtn .fa p{
+  font-size: 20px;
+  margin: 0 0 0 20px;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  text-align:left;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover{
+  background-color: pink;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.danhsach img{
+  width: 200px;
+}
+.danhsach{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 20px;
+}
+.danhsach div{
+  padding: 20px;
+}
+.danhsach a{
+  margin: 20px;
+
+  color: black;
+  text-decoration: none;
+}
+.container-1{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.container-1 input#search{
+  width: 300px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.container-1 input#search::-webkit-input-placeholder {
+  color: #65737e;
+}
+.container-1 input#search:-moz-placeholder { /* Firefox 18- */
+  color: #65737e;  
+}
+.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+  color: #65737e;  
+}
+.container-1 input#search:-ms-input-placeholder {  
+  color: #65737e;  
+}
+.container-1 .icon{
+  position: absolute;
+  /* top: 50%; */
+  margin-left: 240px;
+  margin-top: 3px;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.container-1 input#search{
+  width: 250px;
+  height: 40px;
+  background: #ffffff;
+  border: none;
+  font-size: 13pt;
+  float: left;
+  color: #040404;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease;
+}
+section .content{
+  text-align: center;
+  margin-top: 30px;
+}
+footer div p{
+  margin: 0;
+}
+footer .f-top{
+  display: flex;
+  justify-content: space-between;
+  margin:30px 10%;
+
+}
+footer .f-bot{
+  text-align: justify;
+  display: flex;
+  padding-left: 10%;
+  margin: 30px;
+}
+#container{
+  background-color: #7b6e7614;
+  padding: 20px 0;
+}
+.details{
+  display: flex;
+  margin: 20px 100px;
+  padding: 50px 80px;
+  background-color: white;
+}
+.details img{
+  margin-top: 25px;
+  width: 400px;
+}
+.details .content{
+  padding: 0 0 0 40px ;
+}
+.details .content p{
+  text-align: justify;
+  padding: 5px;
+  margin: 0;
+}
+.details .content .name p{
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.details .content .noidung .nd{
+  font-size: 25px;
+  font-weight: 700;
+}
+.lichchieu h1,.dsChongoi h3{
+  text-align: center;
+}
+.lichchieu div{
+  padding: 30px;
+  text-align: center;
+}
+.lichchieu div button{
+  background-color: lightpink;
+  height: 80px;
+  width: 150px;
+  border: 0;
+  margin-right: 5px;
+}
+.lichchieu div button:hover {
+  background-color: #030202;
+  color: white;
+  visibility: visible;
+}
+.dsChongoi{
+  padding: 30px;
+}
+.ghengoi .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+}
+
+.ghengoi .row {
+  display: flex;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.ghengoi .seat {
+  background-color:  rgb(244, 207, 212);
+  width: 45px;
+  height: 45px;
+  margin: 5px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.ghengoi .VIP{
+  background-color: #d94747;
+}
+.ghengoi .seat.selected {
+  background-color: #000;
+  color: #fff;
+}
+.ghiChu button{
+  border: 0;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  padding: 10px;
+}
+.ghiChu .dachon button{
+  background-color: #3e8e41;
+}
+.ghiChu .hetcho button{
+  background-color: #575757;
+}
+.ghiChu .gheVIP button{
+  background-color: #b63d3d;
+}
+.ghiChu .gheThuong button{
+  background-color: rgb(244, 207, 212);
+
+}
+.ghiChu div{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
